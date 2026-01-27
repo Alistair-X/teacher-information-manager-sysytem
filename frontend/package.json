@@ -23,7 +23,7 @@
     "@apollo/client": "^3.8.8",
     "@ngneat/elf": "^2.5.1",
     "@ngneat/elf-persist-state": "^1.2.1",
-    "apollo-angular": "^8.0.2",
+    "apollo-angular": "^11.0.0",
     "class-validator": "^0.14.1",
     "extract-files": "^13.0.0",
     "graphql": "^16.8.1",
