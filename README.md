@@ -44,4 +44,11 @@ see in `/playground` or api test tool graphql mode (`/graphql`)
 
 配置文件见 `./nginx.conf`
 
+## How to Use
 
+### backend
+
+```shell
+make generate
+make build-release
+```
