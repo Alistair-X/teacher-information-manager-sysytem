@@ -13,12 +13,11 @@ import { EditUGPGGuidance, PreviewUGPGGuidance } from '../../../models/models/uG
 import { UGPGGuidanceService } from '../../../services/ugpgguidance.service';
 
 @Component({
-  selector: 'app-previewugpgguidance',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MatProgressSpinnerModule,
-    MatDividerModule, UgpgguidanceformComponent],
-  templateUrl: './previewugpgguidance.component.html',
-  styleUrl: './previewugpgguidance.component.scss'
+    selector: 'app-previewugpgguidance',
+    imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MatProgressSpinnerModule,
+        MatDividerModule, UgpgguidanceformComponent],
+    templateUrl: './previewugpgguidance.component.html',
+    styleUrl: './previewugpgguidance.component.scss'
 })
 export class PreviewugpgguidanceComponent implements OnInit, OnDestroy {
   private destroy$: Subject<boolean> = new Subject<boolean>();

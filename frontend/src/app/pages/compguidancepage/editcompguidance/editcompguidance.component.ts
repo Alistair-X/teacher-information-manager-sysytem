@@ -11,11 +11,10 @@ import { Subject, takeUntil } from 'rxjs';
 import { DatePipe } from '@angular/common';
 
 @Component({
-  selector: 'app-editcompguidance',
-  standalone: true,
-  imports: [CompguidanceformComponent, MatDividerModule, DatePipe],
-  templateUrl: './editcompguidance.component.html',
-  styleUrl: './editcompguidance.component.scss'
+    selector: 'app-editcompguidance',
+    imports: [CompguidanceformComponent, MatDividerModule, DatePipe],
+    templateUrl: './editcompguidance.component.html',
+    styleUrl: './editcompguidance.component.scss'
 })
 export class EditcompguidanceComponent implements OnInit, OnDestroy {
   buttonLabel = '更新';

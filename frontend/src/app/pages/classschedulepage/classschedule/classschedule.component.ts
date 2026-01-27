@@ -3,11 +3,10 @@ import { RouterOutlet } from '@angular/router';
 
 
 @Component({
-  selector: 'app-classschedule',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './classschedule.component.html',
-  styleUrl: './classschedule.component.scss'
+    selector: 'app-classschedule',
+    imports: [RouterOutlet],
+    templateUrl: './classschedule.component.html',
+    styleUrl: './classschedule.component.scss'
 })
 export class ClassscheduleComponent {
 

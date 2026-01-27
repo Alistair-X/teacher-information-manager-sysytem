@@ -9,11 +9,10 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-signin',
-  standalone: true,
-  imports: [LoginformComponent, MatSnackBarModule, MatButtonModule],
-  templateUrl: './signin.component.html',
-  styleUrl: './signin.component.scss'
+    selector: 'app-signin',
+    imports: [LoginformComponent, MatSnackBarModule, MatButtonModule],
+    templateUrl: './signin.component.html',
+    styleUrl: './signin.component.scss'
 })
 export class SigninComponent implements OnDestroy {
   email!: string;

@@ -10,11 +10,10 @@ import { EditMentorship } from '../../../models/models/mentorship.model';
 import { ArrayEmptyValidator } from '../../../shared/formvalidator/arrayempty.validator';
 
 @Component({
-  selector: 'app-newmentorship',
-  standalone: true,
-  imports: [MentorshipformComponent, MatDividerModule],
-  templateUrl: './newmentorship.component.html',
-  styleUrl: './newmentorship.component.scss'
+    selector: 'app-newmentorship',
+    imports: [MentorshipformComponent, MatDividerModule],
+    templateUrl: './newmentorship.component.html',
+    styleUrl: './newmentorship.component.scss'
 })
 export class NewmentorshipComponent implements OnInit, OnDestroy {
   buttonLabel = '创建';

@@ -11,11 +11,10 @@ import { Router } from '@angular/router';
 import { EditMonograph } from '../../../models/models/monograph.model';
 
 @Component({
-  selector: 'app-newmonograph',
-  standalone: true,
-  imports: [MonographformComponent, MatDividerModule],
-  templateUrl: './newmonograph.component.html',
-  styleUrl: './newmonograph.component.scss'
+    selector: 'app-newmonograph',
+    imports: [MonographformComponent, MatDividerModule],
+    templateUrl: './newmonograph.component.html',
+    styleUrl: './newmonograph.component.scss'
 })
 export class NewmonographComponent implements OnInit, OnDestroy {
   $destroy: Subject<boolean> = new Subject<boolean>();

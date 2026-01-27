@@ -11,11 +11,10 @@ import { Router } from '@angular/router';
 import { EduReformService } from '../../../services/edureform.service';
 
 @Component({
-  selector: 'app-newedureform',
-  standalone: true,
-  imports: [EdureformformComponent, MatDividerModule],
-  templateUrl: './newedureform.component.html',
-  styleUrl: './newedureform.component.scss'
+    selector: 'app-newedureform',
+    imports: [EdureformformComponent, MatDividerModule],
+    templateUrl: './newedureform.component.html',
+    styleUrl: './newedureform.component.scss'
 })
 export class NewedureformComponent implements OnInit, OnDestroy {
   $destroy: Subject<boolean> = new Subject<boolean>();

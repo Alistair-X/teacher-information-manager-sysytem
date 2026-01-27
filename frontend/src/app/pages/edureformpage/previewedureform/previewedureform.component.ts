@@ -16,13 +16,12 @@ import { EditEduReform, PreviewEduReform } from '../../../models/models/eduRefor
 import { AuthRepository } from '../../../core/auth/auth.repository';
 
 @Component({
-  selector: 'app-previewedureform',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, EdureformformComponent,
-    MatDividerModule, MatProgressSpinnerModule
-  ],
-  templateUrl: './previewedureform.component.html',
-  styleUrl: './previewedureform.component.scss'
+    selector: 'app-previewedureform',
+    imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, EdureformformComponent,
+        MatDividerModule, MatProgressSpinnerModule
+    ],
+    templateUrl: './previewedureform.component.html',
+    styleUrl: './previewedureform.component.scss'
 })
 export class PreviewedureformComponent implements OnInit, OnDestroy {
 

@@ -14,13 +14,12 @@ import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { UserExport } from '../../models/models/user.model';
 
 @Component({
-  selector: 'app-edureformform',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
-    MatDividerModule, ReactiveFormsModule, MatDatepickerModule, MatChipsModule, MatAutocompleteModule],
-  templateUrl: './edureformform.component.html',
-  styleUrl: './edureformform.component.scss'
+    selector: 'app-edureformform',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
+        MatDividerModule, ReactiveFormsModule, MatDatepickerModule, MatChipsModule, MatAutocompleteModule],
+    templateUrl: './edureformform.component.html',
+    styleUrl: './edureformform.component.scss'
 })
 export class EdureformformComponent {
   @Input() buttonLabel!: string;

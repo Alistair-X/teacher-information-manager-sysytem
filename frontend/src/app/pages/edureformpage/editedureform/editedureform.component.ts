@@ -13,11 +13,10 @@ import { UserExport } from '../../../models/models/user.model';
 import { UserService } from '../../../services/user.service';
 
 @Component({
-  selector: 'app-editedureform',
-  standalone: true,
-  imports: [DatePipe, MatDividerModule, EdureformformComponent],
-  templateUrl: './editedureform.component.html',
-  styleUrl: './editedureform.component.scss'
+    selector: 'app-editedureform',
+    imports: [DatePipe, MatDividerModule, EdureformformComponent],
+    templateUrl: './editedureform.component.html',
+    styleUrl: './editedureform.component.scss'
 })
 export class EditedureformComponent implements OnInit, OnDestroy {
   buttonLabel = '更新';

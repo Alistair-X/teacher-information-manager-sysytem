@@ -30,15 +30,14 @@ import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import * as XLSX from 'xlsx';
 
 @Component({
-  selector: 'app-overviewpaper',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
-    MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
-    DatePipe, MatDatepickerModule, MatChipsModule, MatAutocompleteModule, MatTooltipModule,
-    MatPaginatorModule, MatProgressSpinnerModule, MatTableModule, MatSortModule, MatCheckboxModule],
-  templateUrl: './overviewpaper.component.html',
-  styleUrl: './overviewpaper.component.scss'
+    selector: 'app-overviewpaper',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
+        MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
+        DatePipe, MatDatepickerModule, MatChipsModule, MatAutocompleteModule, MatTooltipModule,
+        MatPaginatorModule, MatProgressSpinnerModule, MatTableModule, MatSortModule, MatCheckboxModule],
+    templateUrl: './overviewpaper.component.html',
+    styleUrl: './overviewpaper.component.scss'
 })
 export class OverviewpaperComponent implements OnInit, OnDestroy {
   SearchForm!: FormGroup;

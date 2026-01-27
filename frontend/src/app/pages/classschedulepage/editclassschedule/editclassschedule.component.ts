@@ -16,13 +16,12 @@ import { MatDialog } from '@angular/material/dialog';
 import { CoursedialogComponent } from '../../../components/coursedialog/coursedialog.component';
 
 @Component({
-  selector: 'app-editclassschedule',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatButtonModule, MatIconModule, MatInputModule, MatFormFieldModule, MatDatepickerModule,
-    MatDividerModule, ReactiveFormsModule],
-  templateUrl: './editclassschedule.component.html',
-  styleUrl: './editclassschedule.component.scss'
+    selector: 'app-editclassschedule',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatButtonModule, MatIconModule, MatInputModule, MatFormFieldModule, MatDatepickerModule,
+        MatDividerModule, ReactiveFormsModule],
+    templateUrl: './editclassschedule.component.html',
+    styleUrl: './editclassschedule.component.scss'
 })
 export class EditclassscheduleComponent implements OnInit, OnDestroy {
 

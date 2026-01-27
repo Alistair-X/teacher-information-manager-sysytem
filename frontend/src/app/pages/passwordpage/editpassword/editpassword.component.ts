@@ -11,11 +11,10 @@ import { URLValidator } from '../../../shared/formvalidator/url.validator';
 import { DatePipe } from '@angular/common';
 
 @Component({
-  selector: 'app-editpassword',
-  standalone: true,
-  imports: [MatDividerModule, PasswordformComponent, DatePipe],
-  templateUrl: './editpassword.component.html',
-  styleUrl: './editpassword.component.scss'
+    selector: 'app-editpassword',
+    imports: [MatDividerModule, PasswordformComponent, DatePipe],
+    templateUrl: './editpassword.component.html',
+    styleUrl: './editpassword.component.scss'
 })
 export class EditpasswordComponent implements OnInit, OnDestroy {
   password!: PasswordTrue;

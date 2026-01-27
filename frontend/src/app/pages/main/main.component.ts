@@ -11,12 +11,11 @@ import { RouterOutlet, RouterLink, RouterLinkActive, Router } from '@angular/rou
 import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
-  selector: 'app-main',
-  standalone: true,
-  imports: [MatSidenavModule, MatToolbarModule, MatButtonModule, MatIconModule,
-    UserpannelComponent, RouterOutlet, RouterLink, RouterLinkActive, MatListModule, MatDividerModule],
-  templateUrl: './main.component.html',
-  styleUrl: './main.component.scss'
+    selector: 'app-main',
+    imports: [MatSidenavModule, MatToolbarModule, MatButtonModule, MatIconModule,
+        UserpannelComponent, RouterOutlet, RouterLink, RouterLinkActive, MatListModule, MatDividerModule],
+    templateUrl: './main.component.html',
+    styleUrl: './main.component.scss'
 })
 export class MainComponent implements OnInit {
   isDrawerOpen!: boolean;

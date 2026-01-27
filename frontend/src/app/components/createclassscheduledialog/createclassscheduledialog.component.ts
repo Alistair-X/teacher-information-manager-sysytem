@@ -9,12 +9,11 @@ import { provideNativeDateAdapter } from '@angular/material/core';
 import { NewClassScheduleData } from '../../models/models/classSchedule.model';
 
 @Component({
-  selector: 'app-createclassscheduledialog',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatDialogModule, ReactiveFormsModule,
-    MatDatepickerModule],
-  template: `
+    selector: 'app-createclassscheduledialog',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatDialogModule, ReactiveFormsModule,
+        MatDatepickerModule],
+    template: `
     <h2 mat-dialog-title>创建课程表</h2>
     <div mat-dialog-content style="width: 100%;">
       <div [formGroup]="classScheduleForm" style="margin-top: 20px;">
@@ -42,7 +41,7 @@ import { NewClassScheduleData } from '../../models/models/classSchedule.model';
       <button mat-raised-button color="primary" [disabled]="classScheduleForm.invalid" (click)="onDialogClose()">创建</button>
     </div>
   `,
-  styles: ``,
+    styles: ``
 })
 export class CreateclassscheduledialogComponent {
   classScheduleForm: FormGroup = new FormGroup({

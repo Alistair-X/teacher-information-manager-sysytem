@@ -14,13 +14,12 @@ import { ArrayEmptyValidator } from '../../../shared/formvalidator/arrayempty.va
 import { MentorshipformComponent } from '../../../components/mentorshipform/mentorshipform.component';
 
 @Component({
-  selector: 'app-previewmentorship',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MatDividerModule,
-    MatProgressSpinnerModule, MentorshipformComponent
-  ],
-  templateUrl: './previewmentorship.component.html',
-  styleUrl: './previewmentorship.component.scss'
+    selector: 'app-previewmentorship',
+    imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MatDividerModule,
+        MatProgressSpinnerModule, MentorshipformComponent
+    ],
+    templateUrl: './previewmentorship.component.html',
+    styleUrl: './previewmentorship.component.scss'
 })
 export class PreviewmentorshipComponent implements OnInit, OnDestroy {
   private destroy$: Subject<boolean> = new Subject<boolean>();

@@ -11,11 +11,10 @@ import { Router } from '@angular/router';
 import { EditPaper } from '../../../models/models/paper.model';
 
 @Component({
-  selector: 'app-newpaper',
-  standalone: true,
-  imports: [PaperformComponent, MatDividerModule],
-  templateUrl: './newpaper.component.html',
-  styleUrl: './newpaper.component.scss'
+    selector: 'app-newpaper',
+    imports: [PaperformComponent, MatDividerModule],
+    templateUrl: './newpaper.component.html',
+    styleUrl: './newpaper.component.scss'
 })
 export class NewpaperComponent implements OnInit, OnDestroy {
   $destroy: Subject<boolean> = new Subject<boolean>();

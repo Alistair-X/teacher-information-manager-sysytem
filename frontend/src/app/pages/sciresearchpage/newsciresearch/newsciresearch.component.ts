@@ -11,11 +11,10 @@ import { Router } from '@angular/router';
 import { EditAwardRecord, EditSciResearch } from '../../../models/models/sciResearch.model';
 
 @Component({
-  selector: 'app-newsciresearch',
-  standalone: true,
-  imports: [SciresearchformComponent, MatDividerModule],
-  templateUrl: './newsciresearch.component.html',
-  styleUrl: './newsciresearch.component.scss'
+    selector: 'app-newsciresearch',
+    imports: [SciresearchformComponent, MatDividerModule],
+    templateUrl: './newsciresearch.component.html',
+    styleUrl: './newsciresearch.component.scss'
 })
 export class NewsciresearchComponent implements OnInit, OnDestroy {
   $destroy: Subject<boolean> = new Subject<boolean>();

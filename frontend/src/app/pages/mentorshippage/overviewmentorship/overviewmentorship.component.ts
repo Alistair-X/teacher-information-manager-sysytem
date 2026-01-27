@@ -26,15 +26,14 @@ import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import * as XLSX from 'xlsx';
 
 @Component({
-  selector: 'app-overviewmentorship',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
-    MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
-    DatePipe, MatDatepickerModule, MatChipsModule, MatTooltipModule, MatPaginatorModule,
-    MatProgressSpinnerModule, MatTableModule, MatSortModule, MatCheckboxModule],
-  templateUrl: './overviewmentorship.component.html',
-  styleUrl: './overviewmentorship.component.scss'
+    selector: 'app-overviewmentorship',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
+        MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
+        DatePipe, MatDatepickerModule, MatChipsModule, MatTooltipModule, MatPaginatorModule,
+        MatProgressSpinnerModule, MatTableModule, MatSortModule, MatCheckboxModule],
+    templateUrl: './overviewmentorship.component.html',
+    styleUrl: './overviewmentorship.component.scss'
 })
 export class OverviewmentorshipComponent implements OnInit, OnDestroy {
   SearchForm!: FormGroup;

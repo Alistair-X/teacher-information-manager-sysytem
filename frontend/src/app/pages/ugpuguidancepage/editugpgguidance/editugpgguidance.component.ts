@@ -10,11 +10,10 @@ import { ActivatedRoute } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-editugpgguidance',
-  standalone: true,
-  imports: [UgpgguidanceformComponent, MatDividerModule, DatePipe],
-  templateUrl: './editugpgguidance.component.html',
-  styleUrl: './editugpgguidance.component.scss'
+    selector: 'app-editugpgguidance',
+    imports: [UgpgguidanceformComponent, MatDividerModule, DatePipe],
+    templateUrl: './editugpgguidance.component.html',
+    styleUrl: './editugpgguidance.component.scss'
 })
 export class EditugpgguidanceComponent implements OnInit, OnDestroy {
   buttonLabel = '更新';

@@ -11,13 +11,12 @@ import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-mentorshipform',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule, MatDividerModule,
-    ReactiveFormsModule, MatDatepickerModule, MatChipsModule],
-  templateUrl: './mentorshipform.component.html',
-  styleUrl: './mentorshipform.component.scss'
+    selector: 'app-mentorshipform',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule, MatDividerModule,
+        ReactiveFormsModule, MatDatepickerModule, MatChipsModule],
+    templateUrl: './mentorshipform.component.html',
+    styleUrl: './mentorshipform.component.scss'
 })
 export class MentorshipformComponent {
   @Input() mentorshipForm!: FormGroup;

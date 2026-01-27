@@ -23,14 +23,13 @@ import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import * as XLSX from 'xlsx';
 
 @Component({
-  selector: 'app-overviewpassword',
-  standalone: true,
-  imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
-    MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
-    DatePipe, MatTooltipModule, MatPaginatorModule, MatProgressSpinnerModule,
-    MatTableModule, MatSortModule, MatCheckboxModule],
-  templateUrl: './overviewpassword.component.html',
-  styleUrl: './overviewpassword.component.scss'
+    selector: 'app-overviewpassword',
+    imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
+        MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
+        DatePipe, MatTooltipModule, MatPaginatorModule, MatProgressSpinnerModule,
+        MatTableModule, MatSortModule, MatCheckboxModule],
+    templateUrl: './overviewpassword.component.html',
+    styleUrl: './overviewpassword.component.scss'
 })
 export class OverviewpasswordComponent implements OnInit, OnDestroy {
 

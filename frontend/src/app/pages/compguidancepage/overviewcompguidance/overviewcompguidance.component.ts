@@ -26,15 +26,14 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import * as XLSX from 'xlsx';
 
 @Component({
-  selector: 'app-overviewcompguidance',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
-    MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
-    DatePipe, MatDatepickerModule, MatChipsModule, MatTooltipModule, MatPaginatorModule,
-    MatProgressSpinnerModule, MatTableModule, MatSortModule, MatCheckboxModule],
-  templateUrl: './overviewcompguidance.component.html',
-  styleUrl: './overviewcompguidance.component.scss'
+    selector: 'app-overviewcompguidance',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
+        MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
+        DatePipe, MatDatepickerModule, MatChipsModule, MatTooltipModule, MatPaginatorModule,
+        MatProgressSpinnerModule, MatTableModule, MatSortModule, MatCheckboxModule],
+    templateUrl: './overviewcompguidance.component.html',
+    styleUrl: './overviewcompguidance.component.scss'
 })
 export class OverviewcompguidanceComponent implements OnInit, OnDestroy, AfterViewInit {
   SearchForm!: FormGroup;

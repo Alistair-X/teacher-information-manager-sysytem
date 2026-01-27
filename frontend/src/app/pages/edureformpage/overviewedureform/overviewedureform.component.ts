@@ -30,15 +30,14 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import * as XLSX from 'xlsx';
 
 @Component({
-  selector: 'app-overviewedureform',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
-    MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
-    DatePipe, MatDatepickerModule, MatChipsModule, MatAutocompleteModule, MatTooltipModule,
-    MatPaginatorModule, MatProgressSpinnerModule, MatTableModule, MatSortModule, MatCheckboxModule],
-  templateUrl: './overviewedureform.component.html',
-  styleUrl: './overviewedureform.component.scss'
+    selector: 'app-overviewedureform',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
+        MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
+        DatePipe, MatDatepickerModule, MatChipsModule, MatAutocompleteModule, MatTooltipModule,
+        MatPaginatorModule, MatProgressSpinnerModule, MatTableModule, MatSortModule, MatCheckboxModule],
+    templateUrl: './overviewedureform.component.html',
+    styleUrl: './overviewedureform.component.scss'
 })
 export class OverviewedureformComponent implements OnInit, OnDestroy {
   SearchForm!: FormGroup;

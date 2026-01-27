@@ -21,14 +21,13 @@ import { DatePipe } from '@angular/common';
 import { NgxPrintModule } from 'ngx-print';
 
 @Component({
-  selector: 'app-workreport',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatButtonModule, ReactiveFormsModule, MatDividerModule, MatInputModule, MatFormFieldModule,
-    MatIconModule, MatSelectModule, MatCheckboxModule, MatDatepickerModule, MatChipsModule, MatAutocompleteModule,
-    DatePipe,NgxPrintModule],
-  templateUrl: './workreport.component.html',
-  styleUrl: './workreport.component.scss'
+    selector: 'app-workreport',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatButtonModule, ReactiveFormsModule, MatDividerModule, MatInputModule, MatFormFieldModule,
+        MatIconModule, MatSelectModule, MatCheckboxModule, MatDatepickerModule, MatChipsModule, MatAutocompleteModule,
+        DatePipe, NgxPrintModule],
+    templateUrl: './workreport.component.html',
+    styleUrl: './workreport.component.scss'
 })
 export class WorkreportComponent {
   SearchForm!: FormGroup;

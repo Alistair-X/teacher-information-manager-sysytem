@@ -23,13 +23,12 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @Component({
-  selector: 'app-overviewclassschedule',
-  standalone: true,
-  imports: [MatIconModule, MatButtonModule, RouterLink, DatePipe, MatTooltipModule,
-    MatPaginatorModule, MatProgressSpinnerModule, MatDividerModule, MatInputModule,
-    MatFormFieldModule, ReactiveFormsModule, MatCardModule, MatCheckboxModule, MatTableModule, MatSortModule],
-  templateUrl: './overviewclassschedule.component.html',
-  styleUrl: './overviewclassschedule.component.scss'
+    selector: 'app-overviewclassschedule',
+    imports: [MatIconModule, MatButtonModule, RouterLink, DatePipe, MatTooltipModule,
+        MatPaginatorModule, MatProgressSpinnerModule, MatDividerModule, MatInputModule,
+        MatFormFieldModule, ReactiveFormsModule, MatCardModule, MatCheckboxModule, MatTableModule, MatSortModule],
+    templateUrl: './overviewclassschedule.component.html',
+    styleUrl: './overviewclassschedule.component.scss'
 })
 export class OverviewclassscheduleComponent implements OnInit, OnDestroy, AfterViewInit {
 

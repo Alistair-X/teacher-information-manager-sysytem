@@ -14,13 +14,12 @@ import { ENTER, COMMA } from '@angular/cdk/keycodes';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-monographform',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
-    MatDividerModule, ReactiveFormsModule, MatDatepickerModule, MatChipsModule, MatAutocompleteModule],
-  templateUrl: './monographform.component.html',
-  styleUrl: './monographform.component.scss'
+    selector: 'app-monographform',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
+        MatDividerModule, ReactiveFormsModule, MatDatepickerModule, MatChipsModule, MatAutocompleteModule],
+    templateUrl: './monographform.component.html',
+    styleUrl: './monographform.component.scss'
 })
 export class MonographformComponent {
   @Input() buttonLabel!: string;

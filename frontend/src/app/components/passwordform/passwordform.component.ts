@@ -8,11 +8,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-passwordform',
-  standalone: true,
-  imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule, MatDividerModule, ReactiveFormsModule],
-  templateUrl: './passwordform.component.html',
-  styleUrl: './passwordform.component.scss'
+    selector: 'app-passwordform',
+    imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule, MatDividerModule, ReactiveFormsModule],
+    templateUrl: './passwordform.component.html',
+    styleUrl: './passwordform.component.scss'
 })
 export class PasswordformComponent {
   hide = true;

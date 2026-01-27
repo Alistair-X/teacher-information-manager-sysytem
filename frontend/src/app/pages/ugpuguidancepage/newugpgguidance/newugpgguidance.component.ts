@@ -9,11 +9,10 @@ import { EditUGPGGuidance } from '../../../models/models/uGPGGuidance.model';
 import { Subject, takeUntil } from 'rxjs';
 
 @Component({
-  selector: 'app-newugpgguidance',
-  standalone: true,
-  imports: [MatDividerModule, UgpgguidanceformComponent],
-  templateUrl: './newugpgguidance.component.html',
-  styleUrl: './newugpgguidance.component.scss'
+    selector: 'app-newugpgguidance',
+    imports: [MatDividerModule, UgpgguidanceformComponent],
+    templateUrl: './newugpgguidance.component.html',
+    styleUrl: './newugpgguidance.component.scss'
 })
 export class NewugpgguidanceComponent implements OnInit, OnDestroy {
   buttonLabel = '创建';

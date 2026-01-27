@@ -13,11 +13,10 @@ import { UserExport } from '../../../models/models/user.model';
 import { UserService } from '../../../services/user.service';
 
 @Component({
-  selector: 'app-editpaper',
-  standalone: true,
-  imports: [DatePipe, MatDividerModule, PaperformComponent],
-  templateUrl: './editpaper.component.html',
-  styleUrl: './editpaper.component.scss'
+    selector: 'app-editpaper',
+    imports: [DatePipe, MatDividerModule, PaperformComponent],
+    templateUrl: './editpaper.component.html',
+    styleUrl: './editpaper.component.scss'
 })
 export class EditpaperComponent implements OnInit, OnDestroy {
   buttonLabel = '更新';

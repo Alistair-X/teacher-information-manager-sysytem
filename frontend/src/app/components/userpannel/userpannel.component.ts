@@ -10,18 +10,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
-  selector: 'app-userpannel',
-  standalone: true,
-  imports: [MatRippleModule, MatDividerModule, MatButtonModule, RouterLink],
-  templateUrl: './userpannel.component.html',
-  styleUrl: './userpannel.component.scss',
-  animations: [
-    trigger('openClose', [
-      state('open', style({ opacity: 1 })),
-      state('closed', style({ opacity: 0 })),
-      transition('open <=> closed', [animate('0.5s')])
-    ])
-  ],
+    selector: 'app-userpannel',
+    imports: [MatRippleModule, MatDividerModule, MatButtonModule, RouterLink],
+    templateUrl: './userpannel.component.html',
+    styleUrl: './userpannel.component.scss',
+    animations: [
+        trigger('openClose', [
+            state('open', style({ opacity: 1 })),
+            state('closed', style({ opacity: 0 })),
+            transition('open <=> closed', [animate('0.5s')])
+        ])
+    ]
 })
 export class UserpannelComponent implements OnInit, OnDestroy {
   user: User | undefined;

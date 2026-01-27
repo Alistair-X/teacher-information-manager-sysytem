@@ -14,12 +14,11 @@ import { MatDividerModule } from '@angular/material/divider';
 import { CompguidanceformComponent } from '../../../components/compguidanceform/compguidanceform.component';
 
 @Component({
-  selector: 'app-previewcompguidance',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MatProgressSpinnerModule,
-    MatDividerModule, CompguidanceformComponent],
-  templateUrl: './previewcompguidance.component.html',
-  styleUrl: './previewcompguidance.component.scss'
+    selector: 'app-previewcompguidance',
+    imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MatProgressSpinnerModule,
+        MatDividerModule, CompguidanceformComponent],
+    templateUrl: './previewcompguidance.component.html',
+    styleUrl: './previewcompguidance.component.scss'
 })
 export class PreviewcompguidanceComponent implements OnInit, OnDestroy {
   private destroy$: Subject<boolean> = new Subject<boolean>();

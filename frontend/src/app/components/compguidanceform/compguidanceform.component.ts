@@ -11,13 +11,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-compguidanceform',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
-    MatDividerModule, ReactiveFormsModule, MatDatepickerModule, MatChipsModule],
-  templateUrl: './compguidanceform.component.html',
-  styleUrl: './compguidanceform.component.scss'
+    selector: 'app-compguidanceform',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
+        MatDividerModule, ReactiveFormsModule, MatDatepickerModule, MatChipsModule],
+    templateUrl: './compguidanceform.component.html',
+    styleUrl: './compguidanceform.component.scss'
 })
 export class CompguidanceformComponent {
   @Input() buttonLabel!: string;

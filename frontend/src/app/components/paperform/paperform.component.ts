@@ -14,13 +14,12 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { UserExport } from '../../models/models/user.model';
 
 @Component({
-  selector: 'app-paperform',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
-    MatDividerModule, ReactiveFormsModule, MatDatepickerModule, MatChipsModule, MatAutocompleteModule],
-  templateUrl: './paperform.component.html',
-  styleUrl: './paperform.component.scss'
+    selector: 'app-paperform',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
+        MatDividerModule, ReactiveFormsModule, MatDatepickerModule, MatChipsModule, MatAutocompleteModule],
+    templateUrl: './paperform.component.html',
+    styleUrl: './paperform.component.scss'
 })
 export class PaperformComponent {
   @Input() buttonLabel!: string;

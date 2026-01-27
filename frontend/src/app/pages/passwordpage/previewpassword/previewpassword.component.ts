@@ -14,13 +14,12 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { URLValidator } from '../../../shared/formvalidator/url.validator';
 
 @Component({
-  selector: 'app-previewpassword',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MatProgressSpinnerModule,
-    PasswordformComponent, MatDividerModule
-  ],
-  templateUrl: './previewpassword.component.html',
-  styleUrl: './previewpassword.component.scss'
+    selector: 'app-previewpassword',
+    imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MatProgressSpinnerModule,
+        PasswordformComponent, MatDividerModule
+    ],
+    templateUrl: './previewpassword.component.html',
+    styleUrl: './previewpassword.component.scss'
 })
 export class PreviewpasswordComponent implements OnInit, OnDestroy {
   private destroy$: Subject<boolean> = new Subject<boolean>();

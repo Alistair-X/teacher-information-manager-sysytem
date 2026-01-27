@@ -6,11 +6,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-previewclassschedule',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule],
-  templateUrl: './previewclassschedule.component.html',
-  styleUrl: './previewclassschedule.component.scss'
+    selector: 'app-previewclassschedule',
+    imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule],
+    templateUrl: './previewclassschedule.component.html',
+    styleUrl: './previewclassschedule.component.scss'
 })
 export class PreviewclassscheduleComponent {
   constructor(

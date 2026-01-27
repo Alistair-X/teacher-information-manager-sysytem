@@ -6,11 +6,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 
 @Component({
-  selector: 'app-resetpasswordform',
-  standalone: true,
-  imports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule, ReactiveFormsModule],
-  templateUrl: './resetpasswordform.component.html',
-  styleUrl: './resetpasswordform.component.scss'
+    selector: 'app-resetpasswordform',
+    imports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule, ReactiveFormsModule],
+    templateUrl: './resetpasswordform.component.html',
+    styleUrl: './resetpasswordform.component.scss'
 })
 export class ResetpasswordformComponent {
   hide: boolean = true;

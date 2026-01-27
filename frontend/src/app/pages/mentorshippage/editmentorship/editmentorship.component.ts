@@ -11,11 +11,10 @@ import { MentorshipService } from '../../../services/mentorship.service';
 import { ArrayEmptyValidator } from '../../../shared/formvalidator/arrayempty.validator';
 
 @Component({
-  selector: 'app-editmentorship',
-  standalone: true,
-  imports: [MentorshipformComponent, MatDividerModule, DatePipe],
-  templateUrl: './editmentorship.component.html',
-  styleUrl: './editmentorship.component.scss'
+    selector: 'app-editmentorship',
+    imports: [MentorshipformComponent, MatDividerModule, DatePipe],
+    templateUrl: './editmentorship.component.html',
+    styleUrl: './editmentorship.component.scss'
 })
 export class EditmentorshipComponent implements OnInit, OnDestroy {
   buttonLabel = '更新';

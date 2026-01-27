@@ -26,15 +26,14 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import * as XLSX from 'xlsx';
 
 @Component({
-  selector: 'app-overviewugpgguidance',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
-    MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
-    DatePipe, MatDatepickerModule, MatChipsModule, MatTooltipModule, MatPaginatorModule,
-    MatProgressSpinnerModule, MatTableModule, MatSortModule, MatCheckboxModule],
-  templateUrl: './overviewugpgguidance.component.html',
-  styleUrl: './overviewugpgguidance.component.scss'
+    selector: 'app-overviewugpgguidance',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatDividerModule, MatInputModule, MatFormFieldModule, MatIconModule,
+        MatSelectModule, MatButtonModule, ReactiveFormsModule, RouterLink, MatCardModule,
+        DatePipe, MatDatepickerModule, MatChipsModule, MatTooltipModule, MatPaginatorModule,
+        MatProgressSpinnerModule, MatTableModule, MatSortModule, MatCheckboxModule],
+    templateUrl: './overviewugpgguidance.component.html',
+    styleUrl: './overviewugpgguidance.component.scss'
 })
 export class OverviewugpgguidanceComponent {
   SearchForm!: FormGroup;

@@ -9,12 +9,11 @@ import { EmailValidator } from '../../shared/formvalidator/email.validator';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-loginform',
-  standalone: true,
-  imports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule, ReactiveFormsModule],
-  providers: [{ provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'outline' } }],
-  templateUrl: './loginform.component.html',
-  styleUrl: './loginform.component.scss'
+    selector: 'app-loginform',
+    imports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule, ReactiveFormsModule],
+    providers: [{ provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'outline' } }],
+    templateUrl: './loginform.component.html',
+    styleUrl: './loginform.component.scss'
 })
 export class LoginformComponent implements OnInit {
   hide: boolean = true;

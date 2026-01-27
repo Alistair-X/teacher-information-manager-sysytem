@@ -11,11 +11,10 @@ import { EmailValidator } from '../../shared/formvalidator/email.validator';
 import { CodeFormatValidator } from '../../shared/formvalidator/codeformat.validator';
 
 @Component({
-  selector: 'app-resetpassword',
-  standalone: true,
-  imports: [ResetpasswordformComponent],
-  templateUrl: './resetpassword.component.html',
-  styleUrl: './resetpassword.component.scss'
+    selector: 'app-resetpassword',
+    imports: [ResetpasswordformComponent],
+    templateUrl: './resetpassword.component.html',
+    styleUrl: './resetpassword.component.scss'
 })
 export class ResetpasswordComponent implements OnInit, OnDestroy {
   resetPasswordForm!: FormGroup;

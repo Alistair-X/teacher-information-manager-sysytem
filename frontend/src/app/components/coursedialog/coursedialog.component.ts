@@ -15,13 +15,12 @@ import { StartEndValidator } from '../../shared/formvalidator/startend.validator
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-coursedialog',
-  standalone: true,
-  imports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatDialogModule, ReactiveFormsModule,
-    MatChipsModule, ColorHueModule, MatIconModule, MatTooltipModule
-  ],
-  templateUrl: './coursedialog.component.html',
-  styleUrl: './coursedialog.component.scss'
+    selector: 'app-coursedialog',
+    imports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatDialogModule, ReactiveFormsModule,
+        MatChipsModule, ColorHueModule, MatIconModule, MatTooltipModule
+    ],
+    templateUrl: './coursedialog.component.html',
+    styleUrl: './coursedialog.component.scss'
 })
 export class CoursedialogComponent {
 

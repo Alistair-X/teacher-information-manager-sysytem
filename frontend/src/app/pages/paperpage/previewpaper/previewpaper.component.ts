@@ -16,13 +16,12 @@ import { PaperformComponent } from '../../../components/paperform/paperform.comp
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
-  selector: 'app-previewpaper',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, PaperformComponent, MatDividerModule,
-    MatProgressSpinnerModule
-  ],
-  templateUrl: './previewpaper.component.html',
-  styleUrl: './previewpaper.component.scss'
+    selector: 'app-previewpaper',
+    imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, PaperformComponent, MatDividerModule,
+        MatProgressSpinnerModule
+    ],
+    templateUrl: './previewpaper.component.html',
+    styleUrl: './previewpaper.component.scss'
 })
 export class PreviewpaperComponent implements OnInit, OnDestroy {
 

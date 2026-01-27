@@ -16,13 +16,12 @@ import { MonographformComponent } from '../../../components/monographform/monogr
 import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
-  selector: 'app-previewmonograph',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MonographformComponent,
-    MatProgressSpinnerModule, MatDividerModule
-  ],
-  templateUrl: './previewmonograph.component.html',
-  styleUrl: './previewmonograph.component.scss'
+    selector: 'app-previewmonograph',
+    imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MonographformComponent,
+        MatProgressSpinnerModule, MatDividerModule
+    ],
+    templateUrl: './previewmonograph.component.html',
+    styleUrl: './previewmonograph.component.scss'
 })
 export class PreviewmonographComponent implements OnInit, OnDestroy {
 

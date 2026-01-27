@@ -13,11 +13,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { SciresearchformComponent } from '../../../components/sciresearchform/sciresearchform.component';
 
 @Component({
-  selector: 'app-editsciresearch',
-  standalone: true,
-  imports: [DatePipe, MatDividerModule, SciresearchformComponent],
-  templateUrl: './editsciresearch.component.html',
-  styleUrl: './editsciresearch.component.scss'
+    selector: 'app-editsciresearch',
+    imports: [DatePipe, MatDividerModule, SciresearchformComponent],
+    templateUrl: './editsciresearch.component.html',
+    styleUrl: './editsciresearch.component.scss'
 })
 export class EditsciresearchComponent implements OnInit, OnDestroy {
   buttonLabel = '更新';

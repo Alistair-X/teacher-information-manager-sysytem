@@ -10,11 +10,10 @@ import { Router } from '@angular/router';
 import { URLValidator } from '../../../shared/formvalidator/url.validator';
 
 @Component({
-  selector: 'app-newpassword',
-  standalone: true,
-  imports: [MatDividerModule, PasswordformComponent],
-  templateUrl: './newpassword.component.html',
-  styleUrl: './newpassword.component.scss'
+    selector: 'app-newpassword',
+    imports: [MatDividerModule, PasswordformComponent],
+    templateUrl: './newpassword.component.html',
+    styleUrl: './newpassword.component.scss'
 })
 export class NewpasswordComponent implements OnInit, OnDestroy {
   passwordForm!: FormGroup;

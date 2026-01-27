@@ -14,13 +14,12 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { UserExport } from '../../models/models/user.model';
 
 @Component({
-  selector: 'app-sciresearchform',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
-    MatDividerModule, ReactiveFormsModule, MatDatepickerModule, MatChipsModule, MatAutocompleteModule],
-  templateUrl: './sciresearchform.component.html',
-  styleUrl: './sciresearchform.component.scss'
+    selector: 'app-sciresearchform',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
+        MatDividerModule, ReactiveFormsModule, MatDatepickerModule, MatChipsModule, MatAutocompleteModule],
+    templateUrl: './sciresearchform.component.html',
+    styleUrl: './sciresearchform.component.scss'
 })
 export class SciresearchformComponent {
   @Input() buttonLabel!: string;

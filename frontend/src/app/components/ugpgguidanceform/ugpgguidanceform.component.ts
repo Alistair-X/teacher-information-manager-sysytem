@@ -11,13 +11,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-ugpgguidanceform',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule, MatDividerModule,
-    ReactiveFormsModule, MatDatepickerModule, MatChipsModule],
-  templateUrl: './ugpgguidanceform.component.html',
-  styleUrl: './ugpgguidanceform.component.scss'
+    selector: 'app-ugpgguidanceform',
+    providers: [provideNativeDateAdapter()],
+    imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule, MatDividerModule,
+        ReactiveFormsModule, MatDatepickerModule, MatChipsModule],
+    templateUrl: './ugpgguidanceform.component.html',
+    styleUrl: './ugpgguidanceform.component.scss'
 })
 export class UgpgguidanceformComponent {
   @Input() buttonLabel!: string;

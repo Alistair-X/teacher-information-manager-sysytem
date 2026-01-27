@@ -10,11 +10,10 @@ import { EditCompGuidance } from '../../../models/models/compGuidance.model';
 import { ArrayEmptyValidator } from '../../../shared/formvalidator/arrayempty.validator';
 
 @Component({
-  selector: 'app-newcompguidance',
-  standalone: true,
-  imports: [CompguidanceformComponent, MatDividerModule],
-  templateUrl: './newcompguidance.component.html',
-  styleUrl: './newcompguidance.component.scss'
+    selector: 'app-newcompguidance',
+    imports: [CompguidanceformComponent, MatDividerModule],
+    templateUrl: './newcompguidance.component.html',
+    styleUrl: './newcompguidance.component.scss'
 })
 export class NewcompguidanceComponent implements OnInit, OnDestroy {
   buttonLabel = '创建';

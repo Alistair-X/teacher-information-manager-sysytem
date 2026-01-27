@@ -16,13 +16,12 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
-  selector: 'app-previewsciresearch',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MatProgressSpinnerModule,
-    SciresearchformComponent, MatDividerModule
-  ],
-  templateUrl: './previewsciresearch.component.html',
-  styleUrl: './previewsciresearch.component.scss'
+    selector: 'app-previewsciresearch',
+    imports: [MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule, MatProgressSpinnerModule,
+        SciresearchformComponent, MatDividerModule
+    ],
+    templateUrl: './previewsciresearch.component.html',
+    styleUrl: './previewsciresearch.component.scss'
 })
 export class PreviewsciresearchComponent implements OnInit, OnDestroy {
 

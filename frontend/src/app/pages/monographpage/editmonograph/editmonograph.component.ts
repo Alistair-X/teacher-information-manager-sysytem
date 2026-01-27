@@ -13,11 +13,10 @@ import { UserExport } from '../../../models/models/user.model';
 import { UserService } from '../../../services/user.service';
 
 @Component({
-  selector: 'app-editmonograph',
-  standalone: true,
-  imports: [MonographformComponent, MatDividerModule, DatePipe],
-  templateUrl: './editmonograph.component.html',
-  styleUrl: './editmonograph.component.scss'
+    selector: 'app-editmonograph',
+    imports: [MonographformComponent, MatDividerModule, DatePipe],
+    templateUrl: './editmonograph.component.html',
+    styleUrl: './editmonograph.component.scss'
 })
 export class EditmonographComponent implements OnInit, OnDestroy {
   buttonLabel = '更新';

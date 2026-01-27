@@ -21,12 +21,11 @@ import { ApolloError } from '@apollo/client';
 
 
 @Component({
-  selector: 'app-account',
-  standalone: true,
-  imports: [MatDividerModule, MatCardModule, MatInputModule, MatFormFieldModule,
-    ReactiveFormsModule, MatButtonModule, MatIconModule],
-  templateUrl: './account.component.html',
-  styleUrl: './account.component.scss'
+    selector: 'app-account',
+    imports: [MatDividerModule, MatCardModule, MatInputModule, MatFormFieldModule,
+        ReactiveFormsModule, MatButtonModule, MatIconModule],
+    templateUrl: './account.component.html',
+    styleUrl: './account.component.scss'
 })
 export class AccountComponent implements OnInit, OnDestroy {
   user: User | undefined;
