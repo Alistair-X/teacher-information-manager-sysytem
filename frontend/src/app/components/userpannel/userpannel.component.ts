@@ -2,7 +2,7 @@ import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/co
 import { User } from '../../models/models/user.model';
 import { AuthRepository } from '../../core/auth/auth.repository';
 import { filter, Subject, takeUntil } from 'rxjs';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { fromEvent } from 'rxjs';
 import { MatRippleModule } from '@angular/material/core';
 import { MatDividerModule } from '@angular/material/divider';
@@ -10,17 +10,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
-    selector: 'app-userpannel',
-    imports: [MatRippleModule, MatDividerModule, MatButtonModule, RouterLink],
-    templateUrl: './userpannel.component.html',
-    styleUrl: './userpannel.component.scss',
-    animations: [
-        trigger('openClose', [
-            state('open', style({ opacity: 1 })),
-            state('closed', style({ opacity: 0 })),
-            transition('open <=> closed', [animate('0.5s')])
-        ])
-    ]
+  selector: 'app-userpannel',
+  imports: [MatRippleModule, MatDividerModule, MatButtonModule],
+  templateUrl: './userpannel.component.html',
+  styleUrl: './userpannel.component.scss',
+  animations: [
+    trigger('openClose', [
+      state('open', style({ opacity: 1 })),
+      state('closed', style({ opacity: 0 })),
+      transition('open <=> closed', [animate('0.5s')])
+    ])
+  ]
 })
 export class UserpannelComponent implements OnInit, OnDestroy {
   user: User | undefined;

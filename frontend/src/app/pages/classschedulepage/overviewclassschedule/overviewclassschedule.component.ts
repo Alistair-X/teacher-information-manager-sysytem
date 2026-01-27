@@ -3,7 +3,7 @@ import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild } from '@angular
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { CreateclassscheduledialogComponent } from '../../../components/createclassscheduledialog/createclassscheduledialog.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ClassSchedule, ClassScheduleFilter, ClassTime, EditClassSchedule, NewClassScheduleData } from '../../../models/models/classSchedule.model';
@@ -23,12 +23,12 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @Component({
-    selector: 'app-overviewclassschedule',
-    imports: [MatIconModule, MatButtonModule, RouterLink, DatePipe, MatTooltipModule,
-        MatPaginatorModule, MatProgressSpinnerModule, MatDividerModule, MatInputModule,
-        MatFormFieldModule, ReactiveFormsModule, MatCardModule, MatCheckboxModule, MatTableModule, MatSortModule],
-    templateUrl: './overviewclassschedule.component.html',
-    styleUrl: './overviewclassschedule.component.scss'
+  selector: 'app-overviewclassschedule',
+  imports: [MatIconModule, MatButtonModule, DatePipe, MatTooltipModule,
+    MatPaginatorModule, MatProgressSpinnerModule, MatDividerModule, MatInputModule,
+    MatFormFieldModule, ReactiveFormsModule, MatCardModule, MatCheckboxModule, MatTableModule, MatSortModule],
+  templateUrl: './overviewclassschedule.component.html',
+  styleUrl: './overviewclassschedule.component.scss'
 })
 export class OverviewclassscheduleComponent implements OnInit, OnDestroy, AfterViewInit {
 

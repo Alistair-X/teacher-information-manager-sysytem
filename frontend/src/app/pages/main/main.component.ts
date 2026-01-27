@@ -7,15 +7,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { UserpannelComponent } from '../../components/userpannel/userpannel.component';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { RouterOutlet, RouterLink, RouterLinkActive, Router } from '@angular/router';
+import { RouterOutlet, RouterLink, Router } from '@angular/router';
 import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
-    selector: 'app-main',
-    imports: [MatSidenavModule, MatToolbarModule, MatButtonModule, MatIconModule,
-        UserpannelComponent, RouterOutlet, RouterLink, RouterLinkActive, MatListModule, MatDividerModule],
-    templateUrl: './main.component.html',
-    styleUrl: './main.component.scss'
+  selector: 'app-main',
+  imports: [MatSidenavModule, MatToolbarModule, MatButtonModule, MatIconModule,
+    UserpannelComponent, RouterOutlet, RouterLink, MatListModule, MatDividerModule],
+  templateUrl: './main.component.html',
+  styleUrl: './main.component.scss'
 })
 export class MainComponent implements OnInit {
   isDrawerOpen!: boolean;
