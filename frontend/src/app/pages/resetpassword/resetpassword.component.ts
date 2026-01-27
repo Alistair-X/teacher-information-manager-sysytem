@@ -6,15 +6,15 @@ import { PasswordMatchValidator } from '../../shared/formvalidator/passwordmatch
 import { UserService } from '../../services/user.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Subject, takeUntil } from 'rxjs';
-import { ApolloError } from '@apollo/client';
+import { GraphQLError } from 'graphql';
 import { EmailValidator } from '../../shared/formvalidator/email.validator';
 import { CodeFormatValidator } from '../../shared/formvalidator/codeformat.validator';
 
 @Component({
-    selector: 'app-resetpassword',
-    imports: [ResetpasswordformComponent],
-    templateUrl: './resetpassword.component.html',
-    styleUrl: './resetpassword.component.scss'
+  selector: 'app-resetpassword',
+  imports: [ResetpasswordformComponent],
+  templateUrl: './resetpassword.component.html',
+  styleUrl: './resetpassword.component.scss'
 })
 export class ResetpasswordComponent implements OnInit, OnDestroy {
   resetPasswordForm!: FormGroup;
@@ -68,16 +68,16 @@ export class ResetpasswordComponent implements OnInit, OnDestroy {
           this.countdown = 0;
           this.isResetting = false;
         },
-        error: (error: ApolloError) => {
-          if (!error.networkError) {
-            this.matsnackbar.open(error.message, '关闭', {
-              duration: 3000,
-            });
-          } else {
-            this.matsnackbar.open('网络错误或API错误，请稍后重试', '关闭', {
-              duration: 3000,
-            });
-          }
+        error: (error: GraphQLError) => {
+          // if (!error.networkError) {
+          this.matsnackbar.open(error.message, '关闭', {
+            duration: 3000,
+          });
+          // } else {
+          //   this.matsnackbar.open('网络错误或API错误，请稍后重试', '关闭', {
+          //     duration: 3000,
+          //   });
+          // }
           this.isResetting = false;
         }
       });
@@ -106,16 +106,16 @@ export class ResetpasswordComponent implements OnInit, OnDestroy {
             }, 1000);
             this.isSendingCode = false;
           },
-          error: (error: ApolloError) => {
-            if (!error.networkError) {
-              this.matsnackbar.open(error.message, '关闭', {
-                duration: 3000,
-              });
-            } else {
-              this.matsnackbar.open('网络错误或API错误，请稍后重试', '关闭', {
-                duration: 3000,
-              });
-            }
+          error: (error: GraphQLError) => {
+            // if (!error.networkError) {
+            this.matsnackbar.open(error.message, '关闭', {
+              duration: 3000,
+            });
+            // } else {
+            //   this.matsnackbar.open('网络错误或API错误，请稍后重试', '关闭', {
+            //     duration: 3000,
+            //   });
+            // }
             this.isSendingCode = false;
           }
         });

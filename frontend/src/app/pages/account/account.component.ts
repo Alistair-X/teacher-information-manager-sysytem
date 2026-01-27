@@ -17,15 +17,15 @@ import { PhoneNumberValidator } from '../../shared/formvalidator/phonenumber.val
 import { PasswordMatchValidator } from '../../shared/formvalidator/passwordmatch.validator';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { UserService } from '../../services/user.service';
-import { ApolloError } from '@apollo/client';
+import { GraphQLError } from 'graphql';
 
 
 @Component({
-    selector: 'app-account',
-    imports: [MatDividerModule, MatCardModule, MatInputModule, MatFormFieldModule,
-        ReactiveFormsModule, MatButtonModule, MatIconModule],
-    templateUrl: './account.component.html',
-    styleUrl: './account.component.scss'
+  selector: 'app-account',
+  imports: [MatDividerModule, MatCardModule, MatInputModule, MatFormFieldModule,
+    ReactiveFormsModule, MatButtonModule, MatIconModule],
+  templateUrl: './account.component.html',
+  styleUrl: './account.component.scss'
 })
 export class AccountComponent implements OnInit, OnDestroy {
   user: User | undefined;
@@ -151,16 +151,19 @@ export class AccountComponent implements OnInit, OnDestroy {
           }
           this.isUpdateUser = false;
         },
-        error: (error: ApolloError) => {
-          if (!error.networkError) {
-            this.snackBar.open('用户信息更新失败', '关闭', {
-              duration: 3000,
-            });
-          } else {
-            this.snackBar.open('网络错误或API错误，请稍后重试', '关闭', {
-              duration: 3000,
-            });
-          }
+        error: (error: GraphQLError) => {
+          // if (!error.networkError) {
+          //   this.snackBar.open('用户信息更新失败', '关闭', {
+          //     duration: 3000,
+          //   });
+          // } else {
+          //   this.snackBar.open('网络错误或API错误，请稍后重试', '关闭', {
+          //     duration: 3000,
+          //   });
+          // }
+          this.snackBar.open(error.message, '关闭', {
+            duration: 3000,
+          });
           this.isUpdateUser = false;
         }
       }
@@ -217,16 +220,19 @@ export class AccountComponent implements OnInit, OnDestroy {
         this.isActivate = false;
         this.changeDetectorRef.detectChanges();
       },
-      error: (error: ApolloError) => {
-        if (!error.networkError) {
-          this.snackBar.open('用户信息激活失败', '关闭', {
-            duration: 3000,
-          });
-        } else {
-          this.snackBar.open('网络错误或API错误，请稍后重试', '关闭', {
-            duration: 3000,
-          });
-        }
+      error: (error: GraphQLError) => {
+        // if (!error.networkError) {
+        //   this.snackBar.open('用户信息激活失败', '关闭', {
+        //     duration: 3000,
+        //   });
+        // } else {
+        //   this.snackBar.open('网络错误或API错误，请稍后重试', '关闭', {
+        //     duration: 3000,
+        //   });
+        // }
+        this.snackBar.open(error.message, '关闭', {
+          duration: 3000,
+        });
         this.isActivate = false;
       }
     }
@@ -267,16 +273,16 @@ export class AccountComponent implements OnInit, OnDestroy {
         this.oldPasswordHide = true;
         this.isUpdatePassword = false;
       },
-      error: (error: ApolloError) => {
-        if (!error.networkError) {
-          this.snackBar.open(error.message, '关闭', {
-            duration: 3000,
-          });
-        } else {
-          this.snackBar.open('网络错误或API错误，请稍后重试', '关闭', {
-            duration: 3000,
-          });
-        }
+      error: (error: GraphQLError) => {
+        // if (!error.networkError) {
+        this.snackBar.open(error.message, '关闭', {
+          duration: 3000,
+        });
+        // } else {
+        //   this.snackBar.open('网络错误或API错误，请稍后重试', '关闭', {
+        //     duration: 3000,
+        //   });
+        // }
         this.isUpdatePassword = false;
       }
     });
@@ -284,7 +290,7 @@ export class AccountComponent implements OnInit, OnDestroy {
   }
 
   openDeleteDialog() {
-    const dialogRef = this.dialog.open(DeleteuserdialogComponent,{
+    const dialogRef = this.dialog.open(DeleteuserdialogComponent, {
       width: '300px',
       height: '200px',
     });
@@ -299,16 +305,19 @@ export class AccountComponent implements OnInit, OnDestroy {
               });
               this.authRepository.clear();
             },
-            error: (error: ApolloError) => {
-              if (!error.networkError) {
-                this.snackBar.open('用户删除失败', '关闭', {
-                  duration: 3000,
-                });
-              } else {
-                this.snackBar.open('网络错误或API错误，请稍后重试', '关闭', {
-                  duration: 3000,
-                });
-              }
+            error: (error: GraphQLError) => {
+              // if (!error.networkError) {
+              //   this.snackBar.open('用户删除失败', '关闭', {
+              //     duration: 3000,
+              //   });
+              // } else {
+              //   this.snackBar.open('网络错误或API错误，请稍后重试', '关闭', {
+              //     duration: 3000,
+              //   });
+              // }
+              this.snackBar.open(error.message, '关闭', {
+                duration: 3000,
+              });
             }
 
           });

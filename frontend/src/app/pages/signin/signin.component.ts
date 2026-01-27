@@ -3,16 +3,16 @@ import { LoginformComponent } from '../../components/loginform/loginform.compone
 import { AuthService } from '../../core/auth/auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
-import { ApolloError } from '@apollo/client';
+import { GraphQLError } from 'graphql';
 import { AuthUserData } from '../../core/auth/auth.repository';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-    selector: 'app-signin',
-    imports: [LoginformComponent, MatSnackBarModule, MatButtonModule],
-    templateUrl: './signin.component.html',
-    styleUrl: './signin.component.scss'
+  selector: 'app-signin',
+  imports: [LoginformComponent, MatSnackBarModule, MatButtonModule],
+  templateUrl: './signin.component.html',
+  styleUrl: './signin.component.scss'
 })
 export class SigninComponent implements OnDestroy {
   email!: string;
@@ -45,7 +45,7 @@ export class SigninComponent implements OnDestroy {
           // 处理登录响应
           this.handleSignInResponse(response);
         },
-        error: (error: ApolloError) => {
+        error: (error: GraphQLError) => {
           // 处理登录错误
           this.handleSignInError(error);
         }
@@ -81,21 +81,24 @@ export class SigninComponent implements OnDestroy {
     return this.changeDetectorRef.detectChanges();
   }
 
-  handleSignInError(error: ApolloError) {
+  handleSignInError(error: GraphQLError) {
     // 检测是否为Apollo请求错误
-    const networkError = error.networkError;
-    if (!networkError) {
-      // 提示用户
-      this.snackBar.open('登录失败，请检查邮箱和密码是否正确', '关闭', {
-        duration: 3000,
-      });
+    // const networkError = error.networkError;
+    // if (!networkError) {
+    //   // 提示用户
+    //   this.snackBar.open('登录失败，请检查邮箱和密码是否正确', '关闭', {
+    //     duration: 3000,
+    //   });
 
-    } else {
-      // 提示用户
-      this.snackBar.open('网络错误或API错误，请稍后重试', '关闭', {
-        duration: 3000,
-      });
-    }
+    // } else {
+    //   // 提示用户
+    //   this.snackBar.open('网络错误或API错误，请稍后重试', '关闭', {
+    //     duration: 3000,
+    //   });
+    // }
+    this.snackBar.open(`${error.message}`, '关闭', {
+      duration: 3000,
+    });
     this.isSignin = false;
     this.changeDetectorRef.detectChanges();
   }
