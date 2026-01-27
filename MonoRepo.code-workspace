@@ -13,6 +13,10 @@
             "path": "server"
         },
         {
+            "name": "Back End BuindIn Front End",
+            "path": "server/admin-dashboard"
+        },
+        {
             "name": "WeChat Mini Program",
             "path": "miniapp"
         }
