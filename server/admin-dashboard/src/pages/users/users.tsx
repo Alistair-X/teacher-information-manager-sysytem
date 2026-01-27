@@ -137,7 +137,7 @@ export function Users() {
 
   return (
     <div className="h-screen w-full ">
-      <header className="flex fixed top-0 justify-between items-center w-full h-16 border rounded-sm shadow-md shadow-slate-200">
+      <header className="flex fixed top-0 justify-between items-center w-full h-16 border rounded-xs shadow-md shadow-slate-200">
         <div></div>
         <button onClick={handleLogout} className="w-20 h-9 mr-4 bg-sky-500/80
          hover:bg-sky-600/80 rounded-md text-white">退出</button>

@@ -73,7 +73,7 @@ export function SignIn() {
           <div className="w-full flex flex-col gap-3">
             <label className="pl-2" htmlFor="account">账号</label>
             <input className="w-full bg-gray-100 pl-5 h-14 rounded-md border border-slate-300
-            focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 
+            focus:outline-hidden focus:border-sky-500 focus:ring-1 focus:ring-sky-500 
             invalid:border-red-500 focus:invalid:border-red-500  focus:invalid:ring-red-500"
               type="text" value={account} onChange={(event) => setAccount(event.target.value)}
               placeholder="账号" id="account" required />
@@ -82,7 +82,7 @@ export function SignIn() {
             <label className="pl-2" htmlFor="password">密码</label>
             <div className="flex items-center">
               <input className="w-full bg-gray-100 pl-5 h-14 rounded-md border border-slate-300
-            focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 
+            focus:outline-hidden focus:border-sky-500 focus:ring-1 focus:ring-sky-500 
             invalid:border-red-500 focus:invalid:border-red-500  focus:invalid:ring-red-500"
                 type={hide ? "password" : "text"} value={password} onChange={(event) => setPassword(event.target.value)}
                 placeholder="密码" id="password" required />
