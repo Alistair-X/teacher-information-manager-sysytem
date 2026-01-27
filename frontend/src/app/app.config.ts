@@ -1,11 +1,11 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom, DOCUMENT } from '@angular/core';
 import { Router, provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptors, withInterceptorsFromDi } from '@angular/common/http';
 import { graphqlProvider } from './graphql.provider';
-import { DOCUMENT } from '@angular/common';
+
 import { AuthService } from './core/auth/auth.service';
 import { AuthRepository } from './core/auth/auth.repository';
 import { TokenInterceptor } from './core/auth/token.interceptor';
